@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — InfraSim</title>
+<meta name="description" content="Get help with InfraSim: contact support, common questions, and troubleshooting.">
+<style>
+  :root {
+    --bg: #06111C; --surface: #0F2B3D; --border: #1B3E57; --accent: #19A7F5;
+    --text: #F2F8FC; --text-secondary: #C3D3E0; --text-muted: #8AA0B4;
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 40px 20px 96px; }
+  a.back { display: inline-block; color: var(--accent); text-decoration: none; font-weight: 700; font-size: 14px; margin-bottom: 24px; min-height: 44px; line-height: 44px; }
+  h1 { font-size: 30px; font-weight: 900; letter-spacing: -0.02em; margin: 0 0 4px; }
+  .updated { color: var(--text-muted); font-size: 13px; margin: 0 0 32px; }
+  h2 { font-size: 19px; font-weight: 800; margin: 32px 0 12px; }
+  p, li { font-size: 15px; line-height: 1.7; color: var(--text-secondary); }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 10px; }
+  strong { color: var(--text); }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 20px 22px; margin: 20px 0; }
+  .mail-btn { display: inline-flex; align-items: center; min-height: 44px; padding: 0 20px; border-radius: 10px; background: var(--accent); color: #06111C; font-weight: 800; text-decoration: none; font-size: 15px; }
+  footer { margin-top: 48px; font-size: 13px; color: var(--text-muted); }
+  footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="index.html">&larr; InfraSim</a>
+  <h1>Support</h1>
+  <p class="updated">We usually reply within 2 business days.</p>
+
+  <div class="card">
+    <p style="margin: 0 0 14px;">The fastest way to reach us:</p>
+    <a class="mail-btn" href="mailto:support@infrasim.app">Email support@infrasim.app</a>
+  </div>
+
+  <h2>Common questions</h2>
+
+  <p><strong>My progress didn't sync between devices.</strong><br>
+  Progress only syncs if you're signed in with the same account on both
+  devices, and both devices have a network connection. Guest progress lives
+  only on the device it was created on. Sign in from Settings → Account to
+  start syncing.</p>
+
+  <p><strong>I bought Pro but it isn't unlocked.</strong><br>
+  Open Settings → Restore Purchases. This re-checks your App Store or Google
+  Play purchase history and restores entitlement without charging you again.
+  If it still doesn't unlock, email us with your purchase date and platform
+  (iOS or Android).</p>
+
+  <p><strong>How do I cancel my subscription?</strong><br>
+  Subscriptions are managed entirely by Apple or Google, not by us. On iOS:
+  Settings → your name → Subscriptions. On Android: Play Store → Payments
+  &amp; subscriptions. See our <a href="terms.html" style="color: var(--accent);">Terms</a>
+  for the full subscription policy.</p>
+
+  <p><strong>Can I get a refund?</strong><br>
+  Refunds are handled by the store you purchased from — Apple at
+  reportaproblem.apple.com, Google through your Play Store order history.</p>
+
+  <p><strong>Is any of this real cloud infrastructure?</strong><br>
+  No. InfraSim's simulation runs entirely on your device (or on our servers
+  only to verify Daily Challenge scores). It never provisions, connects to,
+  or spends money in a real AWS, Azure, or Google Cloud account.</p>
+
+  <p><strong>I want to delete my account and data.</strong><br>
+  See our <a href="delete-account.html" style="color: var(--accent);">account
+  deletion page</a> for exact in-app steps.</p>
+
+  <p><strong>I found a bug or the app crashed.</strong><br>
+  Email us with your device model, OS version, and what you were doing when
+  it happened — a screenshot helps a lot. We use Sentry to automatically
+  capture crash reports, but the extra context speeds up a fix.</p>
+
+  <h2>Feature requests and feedback</h2>
+  <p>We read every email. Tell us what level, incident, or service you'd like
+  to see next.</p>
+
+  <footer>&copy; 2026 InfraSim. <a href="index.html">Back to home</a></footer>
+</div>
+</body>
+</html>

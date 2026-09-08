@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Delete Your Account — InfraSim</title>
+<meta name="description" content="How to permanently delete your InfraSim account and data from the app.">
+<style>
+  :root {
+    --bg: #06111C; --surface: #0F2B3D; --border: #1B3E57; --accent: #19A7F5;
+    --error: #F5504B; --error-light: #3A1414;
+    --text: #F2F8FC; --text-secondary: #C3D3E0; --text-muted: #8AA0B4;
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 40px 20px 96px; }
+  a.back { display: inline-block; color: var(--accent); text-decoration: none; font-weight: 700; font-size: 14px; margin-bottom: 24px; min-height: 44px; line-height: 44px; }
+  h1 { font-size: 30px; font-weight: 900; letter-spacing: -0.02em; margin: 0 0 4px; }
+  .updated { color: var(--text-muted); font-size: 13px; margin: 0 0 32px; }
+  h2 { font-size: 19px; font-weight: 800; margin: 32px 0 12px; }
+  p, li { font-size: 15px; line-height: 1.7; color: var(--text-secondary); }
+  ol, ul { padding-left: 22px; }
+  li { margin-bottom: 10px; }
+  strong { color: var(--text); }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 20px 22px; margin: 20px 0; }
+  .danger { border-color: var(--error); background: var(--error-light); }
+  .step-num {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 24px; height: 24px; border-radius: 999px; background: var(--accent);
+    color: #06111C; font-weight: 800; font-size: 13px; margin-right: 10px;
+  }
+  footer { margin-top: 48px; font-size: 13px; color: var(--text-muted); }
+  footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="index.html">&larr; InfraSim</a>
+  <h1>Delete Your Account</h1>
+  <p class="updated">Effective date: September 8, 2026</p>
+
+  <p>InfraSim lets you permanently delete your account and its data directly
+  in the app — no email or waiting required. This page describes exactly what
+  that does, as required by Google Play's account deletion policy.</p>
+
+  <div class="card">
+    <p style="margin: 0;"><strong>Note:</strong> if you only ever play as a
+    guest (never signed in), there is no account to delete — your progress
+    already lives solely on your device. Uninstalling the app removes it.</p>
+  </div>
+
+  <h2>How to delete your account in the app</h2>
+  <ol>
+    <li><span class="step-num">1</span>Open InfraSim and sign in if you
+    aren't already.</li>
+    <li><span class="step-num">2</span>Go to <strong>Settings → Account →
+    Delete account</strong>.</li>
+    <li><span class="step-num">3</span>Read the warning screen, which lists
+    exactly what is deleted, then tap <strong>Continue to delete</strong>.</li>
+    <li><span class="step-num">4</span>Type <strong>DELETE</strong> in the
+    confirmation field to enable the final button.</li>
+    <li><span class="step-num">5</span>Tap <strong>Delete my account</strong>.
+    Deletion runs immediately against our backend.</li>
+  </ol>
+
+  <h2>What gets deleted</h2>
+  <ul>
+    <li>Your account and sign-in access are permanently revoked.</li>
+    <li>Your synced progress, saved architectures, run history, achievements,
+    and Daily Challenge results stored on our servers are deleted.</li>
+    <li>Your display name is removed from any public leaderboard.</li>
+  </ul>
+
+  <h2>What may be retained</h2>
+  <ul>
+    <li>Some records may be retained where required for legal, tax, fraud
+    prevention, or accounting compliance (for example, purchase records
+    required by Apple/Google or applicable law), retained only as long as
+    necessary for that purpose.</li>
+    <li>Diagnostic data already sent to Sentry or PostHog before deletion
+    (crash reports, anonymous analytics events) is retained per those
+    providers' own retention windows; it is not linked back to your deleted
+    account identity.</li>
+    <li>Local progress stored only on your own device is not affected by
+    server-side account deletion — uninstall the app to remove that too.</li>
+  </ul>
+
+  <h2>Subscriptions are not cancelled automatically</h2>
+  <div class="card danger">
+    <p style="margin: 0;">Deleting your InfraSim account does <strong>not</strong>
+    cancel an active App Store or Google Play subscription — those are billed
+    and managed by Apple or Google directly. Cancel first in your device's
+    subscription settings (iOS: Settings → your name → Subscriptions; Android:
+    Play Store → Payments &amp; subscriptions) if you don't want to be
+    billed again.</p>
+  </div>
+
+  <h2>Can't sign in but still want your data deleted?</h2>
+  <p>Email <a href="mailto:support@infrasim.app" style="color: var(--accent);">support@infrasim.app</a>
+  from the address associated with your account and we will process a manual
+  deletion request.</p>
+
+  <footer>&copy; 2026 InfraSim. <a href="index.html">Back to home</a> &middot;
+  <a href="privacy.html">Privacy</a> &middot; <a href="terms.html">Terms</a></footer>
+</div>
+</body>
+</html>
