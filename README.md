@@ -1,4 +1,12 @@
-# InfraSim legal / support site
+# InfraSim legal and support site
+
+These pages are served by GitHub Pages from the public repository
+`ankit013002/infrasim-site` at https://ankit013002.github.io/infrasim-site/. The
+app repository is private on a plan without Pages, so that second repository
+holds nothing but these files. **This directory is the source of truth**: edit
+here, then run `scripts/publish-site.sh` and open every URL from a phone on
+cellular data.
+
 
 Static HTML, no build step, no external assets. This directory is the source
 for the public pages required by App Store / Play Store review: privacy
@@ -31,17 +39,17 @@ uses `actions/upload-pages-artifact` + `actions/deploy-pages` to publish the
    run summary. It will be:
 
    ```
-   https://ankit013002.github.io/infrasim/
+   https://ankit013002.github.io/infrasim-site/
    ```
 
 ## Resulting URLs
 
 ```
-https://ankit013002.github.io/infrasim/
-https://ankit013002.github.io/infrasim/privacy.html
-https://ankit013002.github.io/infrasim/terms.html
-https://ankit013002.github.io/infrasim/support.html
-https://ankit013002.github.io/infrasim/delete-account.html
+https://ankit013002.github.io/infrasim-site/
+https://ankit013002.github.io/infrasim-site/privacy.html
+https://ankit013002.github.io/infrasim-site/terms.html
+https://ankit013002.github.io/infrasim-site/support.html
+https://ankit013002.github.io/infrasim-site/delete-account.html
 ```
 
 These are the URLs already wired into the app via

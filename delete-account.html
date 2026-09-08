@@ -78,10 +78,17 @@
     prevention, or accounting compliance (for example, purchase records
     required by Apple/Google or applicable law), retained only as long as
     necessary for that purpose.</li>
-    <li>Diagnostic data already sent to Sentry or PostHog before deletion
-    (crash reports, anonymous analytics events) is retained per those
-    providers' own retention windows; it is not linked back to your deleted
-    account identity.</li>
+    <li>Diagnostic data already sent to Sentry or PostHog <strong>before</strong>
+    deletion (crash reports, analytics events sent while you were signed in)
+    was linked to your account ID at the time and stays that way in those
+    providers' systems until it ages out under their own retention windows —
+    deleting your account does not retroactively erase or re-anonymize it.
+    Account deletion is the retention boundary on <em>our</em> servers: it
+    immediately stops any further event from being linked to that identity
+    (we call PostHog's <code>reset()</code> and clear the Sentry user), but it
+    does not reach into Sentry or PostHog's own storage. Email
+    support@infrasim.app if you want us to request removal of that historical
+    data from those providers.</li>
     <li>Local progress stored only on your own device is not affected by
     server-side account deletion — uninstall the app to remove that too.</li>
   </ul>

@@ -84,11 +84,11 @@
   <h3>1.2 If you create an account</h3>
   <p>Creating an account is optional and is used only to sync progress across
   devices, keep a Daily Challenge leaderboard, and restore purchases. Accounts
-  are provided through Supabase Auth and, on iOS, Sign in with Apple, or a
-  Google sign-in. We collect:</p>
+  are created with an email address and password through Supabase Auth — there
+  is no "Sign in with Apple" or Google sign-in option. We collect:</p>
   <ul>
-    <li><strong>Email address</strong> (or the private relay address Apple
-    provides if you choose "Hide My Email").</li>
+    <li><strong>Email address</strong>, used for sign-in and account
+    recovery.</li>
     <li><strong>A display name or handle</strong> you choose, shown next to
     your score on public Daily Challenge leaderboards. Do not use your real
     name if you would rather stay pseudonymous.</li>
@@ -105,29 +105,40 @@
   other payment details. Apple and Google handle payment directly.</p>
 
   <h3>1.4 Diagnostics and analytics</h3>
+  <p>Both of the following are controlled by separate toggles in
+  <strong>Settings → Privacy</strong>. Turning either off stops that
+  collection immediately — it does not retroactively erase what was already
+  sent. Both are pseudonymous: no name, email, or free text is ever included.
+  While you are signed in, events are linked to your account ID so a specific
+  bug report can be investigated; playing as a guest, they carry only a
+  random installation identifier with no link to any account.</p>
   <table>
     <tr><th>Service</th><th>What it collects</th><th>Why</th></tr>
     <tr>
       <td><strong>Sentry</strong> (crash/error reporting)</td>
-      <td>Stack traces, device model, OS version, app version, and a
-      device-generated installation identifier. No architecture contents or
-      free text you typed.</td>
+      <td>Stack traces, device model, OS version, app version, and either
+      your account ID (signed in) or a device-generated installation
+      identifier (guest). No architecture contents or free text you typed.</td>
       <td>Find and fix crashes and bugs.</td>
     </tr>
     <tr>
       <td><strong>PostHog</strong> (product analytics)</td>
-      <td>Anonymous or pseudonymous event names (e.g. "level completed",
-      "paywall viewed"), coarse device/OS info, and a random installation
-      identifier. Personally identifying fields are scrubbed before sending.
-      We do not send architecture contents or free text as event data.</td>
+      <td>Event names (e.g. "level completed", "paywall viewed"), coarse
+      device/OS info, and either your account ID (signed in) or a random
+      installation identifier (guest). Personally identifying fields are
+      scrubbed before sending. We do not send architecture contents or free
+      text as event data.</td>
       <td>Understand which features are used and where players get stuck, so
       we can improve the game.</td>
     </tr>
     <tr>
-      <td><strong>Push notifications</strong> (expo-notifications)</td>
-      <td>A device push token, only if you enable notifications.</td>
-      <td>Daily Challenge and streak reminders you opt into. You can disable
-      this in Settings or your device's notification settings at any time.</td>
+      <td><strong>Local reminders</strong> (expo-notifications)</td>
+      <td>Nothing leaves your device. Daily Challenge and streak reminders are
+      scheduled entirely on-device — there is no push token, no server, and no
+      account required.</td>
+      <td>An optional nudge you turn on in Settings → Notifications. Turning
+      it off, or your device's own notification settings, stops it at any
+      time.</td>
     </tr>
   </table>
 
@@ -152,7 +163,10 @@
   <h2>4. Your choices</h2>
   <ul>
     <li>Play entirely offline as a guest and share nothing with us.</li>
-    <li>Disable notifications at any time in Settings.</li>
+    <li>Turn analytics or crash reporting off at any time in Settings →
+    Privacy — collection stops immediately.</li>
+    <li>Turn reminder notifications off at any time in Settings →
+    Notifications, or in your device's own notification settings.</li>
     <li>Request deletion of your account and associated data — see our
     <a href="delete-account.html" style="color: var(--accent);">account
     deletion page</a> for the exact steps.</li>
