@@ -77,9 +77,9 @@
     font-weight: 700;
     font-size: 14px;
   }
-  .store-link.disabled {
-    color: var(--text-muted);
-    cursor: default;
+  .store-link:hover {
+    border-color: var(--accent);
+    color: var(--accent);
   }
   section {
     border-top: 1px solid var(--border);
@@ -133,15 +133,15 @@
     <p class="tagline">Build systems. Deploy them. Watch them break. Learn why.</p>
 
     <div class="store-row">
-      <span class="store-link disabled" aria-disabled="true">🍎 Download on the App Store — coming soon</span>
-      <span class="store-link disabled" aria-disabled="true">▶ Get it on Google Play — coming soon</span>
+      <a class="store-link" href="https://apps.apple.com/app/id6809240894">🍎 Download on the App Store</a>
+      <a class="store-link" href="https://play.google.com/store/apps/details?id=com.infrasim.app">▶ Get it on Google Play</a>
     </div>
 
     <section>
       <h2>About</h2>
       <p style="color: var(--text-secondary); line-height: 1.6;">
         InfraSim is a mobile system-design game. Design a cloud architecture on
-        a canvas — DNS, CDN, load balancer, compute, cache, database, queue —
+        a canvas (DNS, CDN, load balancer, compute, cache, database, queue)
         deploy it, and watch simulated traffic flow through the graph. Metrics
         move, bottlenecks appear, costs accrue, failures propagate, and
         incidents force a reaction. The simulation runs entirely on your
